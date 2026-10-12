@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>借用場地申請 | 活水浸信會 Living Water Baptist Church</title>
+  <meta name="description" content="填寫活水浸信會借用場地／禮堂申請表，提交借用日期、場地、設備與聯絡資料。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="page-inner">
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="Materials/logo_w.png" alt="活水浸信會 Living Water Baptist Church"/>
+      </a>
+
+      <nav class="site-nav" id="primary-nav" data-nav aria-label="主要導覽">
+        <ul class="nav-list">
+          <li><a href="index.html">主頁</a></li>
+          <li class="has-submenu" data-submenu>
+            <button class="nav-parent" type="button" aria-expanded="false" data-submenu-toggle>
+              本堂介紹 <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <ul class="submenu">
+              <li><a href="#">同工</a></li>
+              <li><a href="#">本會歷史</a></li>
+              <li><a href="#">本會信仰</a></li>
+              <li><a href="venue.html">婚禮/一般借堂</a></li>
+              <li><a href="#">建堂見證</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu" data-submenu>
+            <button class="nav-parent" type="button" aria-expanded="false" data-submenu-toggle>
+              崇拜聚會 <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <ul class="submenu">
+              <li><a href="index.html#worship">崇拜時間</a></li>
+              <li><a href="calendar.html">教會行事曆</a></li>
+              <li><a href="#" target="_blank" rel="noopener noreferrer">行事曆下載</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu" data-submenu>
+            <button class="nav-parent" type="button" aria-expanded="false" data-submenu-toggle>
+              牧養區資訊 <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <ul class="submenu">
+              <li><a href="#">牧養部</a></li>
+              <li><a href="#">敬拜部</a></li>
+              <li><a href="#">培育部</a></li>
+              <li><a href="#">宣教部</a></li>
+              <li><a href="#">關顧部</a></li>
+              <li><a href="#">社區佈道部</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu" data-submenu>
+            <button class="nav-parent" type="button" aria-expanded="false" data-submenu-toggle>
+              靈修敬拜 <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <ul class="submenu">
+              <li><a href="preach.html">昔日講道</a></li>
+              <li><a href="#">牧者心聲</a></li>
+              <li><a href="#">經課</a></li>
+              <li><a href="#">代禱事項</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu" data-submenu>
+            <button class="nav-parent" type="button" aria-expanded="false" data-submenu-toggle>
+              活動及報告 <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <ul class="submenu">
+              <li><a href="index.html#news">最新消息</a></li>
+              <li><a href="#">惡劣天氣安排</a></li>
+              <li><a href="#">相片集</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">聯絡我們</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="c-btn c-btn--primary c-btn--sm" href="index.html#worship">崇拜時間</a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="primary-nav" aria-label="開啟選單">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero" aria-labelledby="booking-page-title">
+      <div class="page-hero-bg" aria-hidden="true"></div>
+      <div class="container page-hero-content">
+        <h1 id="booking-page-title">借用場地／禮堂申請</h1>
+        <p class="page-breadcrumb">
+          <a href="index.html">主頁</a>
+          <span aria-hidden="true">/</span>
+          <a href="venue.html">婚禮／一般借堂</a>
+          <span aria-hidden="true">/</span>
+          <span>借用場地申請</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="booking-section section-space">
+      <div class="container">
+        <div class="calendar-intro">
+          <p class="page-lead">請填寫以下申請資料。設備供應需按本會情況而決定能否提供。提交後本堂同工會另行聯絡確認。</p>
+          <div class="worship-actions">
+            <a class="c-btn c-btn--outline c-btn--sm" href="venue.html">查看收費表</a>
+            <a class="c-btn c-btn--primary c-btn--sm" href="#" target="_blank" rel="noopener noreferrer">下載申請表 PDF</a>
+          </div>
+        </div>
+
+        <form class="booking-form" id="venue-booking-form" data-booking-form novalidate>
+          <div class="booking-panel">
+            <h2>申請者資料</h2>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label" for="org-name">申請者／團體名稱 <span class="req">*</span></label>
+                <input class="form-control" id="org-name" name="orgName" type="text" required autocomplete="organization" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="contact-name">聯絡人 <span class="req">*</span></label>
+                <input class="form-control" id="contact-name" name="contactName" type="text" required autocomplete="name" />
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="address">地址</label>
+                <input class="form-control" id="address" name="address" type="text" autocomplete="street-address" />
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" for="phone">聯絡電話 <span class="req">*</span></label>
+                <input class="form-control" id="phone" name="phone" type="tel" required autocomplete="tel" />
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" for="fax">傳真</label>
+                <input class="form-control" id="fax" name="fax" type="tel" />
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" for="email">電郵 <span class="req">*</span></label>
+                <input class="form-control" id="email" name="email" type="email" required autocomplete="email" />
+              </div>
+            </div>
+          </div>
+
+          <div class="booking-panel" id="venue-availability">
+            <h2>活動資料</h2>
+            <div class="row g-3">
+              <div class="col-12">
+                <label class="form-label" for="event-name">聚會或活動名稱／性質 <span class="req">*</span></label>
+                <input class="form-control" id="event-name" name="eventName" type="text" required />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="attendance">預計出席人數 <span class="req">*</span></label>
+                <input class="form-control" id="attendance" name="attendance" type="number" min="1" required />
+              </div>
+            </div>
+
+            <p class="booking-hint mt-4">每個時段可獨立選擇場地與日期。預設為時段 1，如需借用多個時段可按「新增時段」。</p>
+            <datalist id="venue-options" data-venue-options></datalist>
+
+            <div class="booking-slots" data-booking-slots>
+              <div class="booking-slot" data-booking-slot data-slot-index="1">
+                <div class="booking-slot-head">
+                  <h4 data-slot-title>時段 1 <span class="req">*</span></h4>
+                  <button type="button" class="c-btn c-btn--outline c-btn--sm" data-remove-slot hidden>
+                    <i class="fa-solid fa-trash-can" aria-hidden="true"></i> 移除此時段
+                  </button>
+                </div>
+
+                <div class="venue-availability venue-availability--embedded">
+                  <div class="avail-toolbar">
+                    <label class="venue-field avail-venue-field">
+                      <span>場地檔期一覽</span>
+                      <select data-avail-venue></select>
+                    </label>
+                    <div class="avail-legend">
+                      <span><i class="avail-dot is-available" aria-hidden="true"></i> 可申請</span>
+                      <span><i class="avail-dot is-reserved" aria-hidden="true"></i> 已預約</span>
+                      <span><i class="avail-dot is-pending" aria-hidden="true"></i> 審批中</span>
+                    </div>
+                  </div>
+
+                  <div class="avail-venue-info" data-avail-venue-info></div>
+
+                  <div class="avail-layout">
+                    <div class="avail-board">
+                      <div class="calendar-toolbar">
+                        <h3 data-avail-title>月曆</h3>
+                        <div class="calendar-nav">
+                          <button type="button" class="c-btn c-btn--outline c-btn--sm" data-avail-prev aria-label="上一個月">
+                            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+                          </button>
+                          <button type="button" class="c-btn c-btn--outline c-btn--sm" data-avail-today>今天</button>
+                          <button type="button" class="c-btn c-btn--outline c-btn--sm" data-avail-next aria-label="下一個月">
+                            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="avail-grid" data-avail-grid></div>
+                    </div>
+
+                    <aside class="avail-detail" data-avail-detail aria-live="polite">
+                      <h3 data-avail-detail-date>選擇日期</h3>
+                      <div class="avail-detail-list" data-avail-detail-list></div>
+                      <button type="button" class="c-btn c-btn--primary c-btn--sm avail-book-btn" data-avail-apply>
+                        套用至此時段
+                      </button>
+                    </aside>
+                  </div>
+                </div>
+
+                <div class="row g-3">
+                  <div class="col-md-6 col-lg-3">
+                    <label class="form-label" for="slot-date-1">借用日期</label>
+                    <input class="form-control" id="slot-date-1" name="eventDate" type="date" required data-slot-date />
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <label class="form-label" for="slot-time-1">借用時間</label>
+                    <input class="form-control" id="slot-time-1" name="slotTime1" type="text" placeholder="例如：10:00–12:00" required data-slot-time />
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <label class="form-label" for="slot-venue-1">借用場地</label>
+                    <input class="form-control" id="slot-venue-1" name="slotVenue1" type="text" list="venue-options" placeholder="場地名稱或房間編號" required data-slot-venue />
+                  </div>
+                  <div class="col-md-6 col-lg-3">
+                    <label class="form-label" for="slot-donation-1">借用場地奉獻 ($)</label>
+                    <input class="form-control booking-donation" id="slot-donation-1" name="slotDonation1" type="number" min="0" step="1" data-donation />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="booking-slot-actions">
+              <button type="button" class="c-btn c-btn--outline" data-add-slot>
+                <i class="fa-solid fa-plus" aria-hidden="true"></i> 新增時段
+              </button>
+              <div class="booking-total-row">
+                <label class="form-label" for="donation-total">總金額 ($)</label>
+                <input class="form-control" id="donation-total" name="donationTotal" type="text" readonly value="0" data-donation-total />
+              </div>
+            </div>
+          </div>
+
+          <div class="booking-panel">
+            <h2>基本設備</h2>
+            <p class="booking-hint">需按本會情況而決定能否提供。</p>
+            <div class="table-responsive booking-table-wrap">
+              <table class="booking-table booking-table--equip">
+                <thead>
+                  <tr>
+                    <th scope="col">基本設備</th>
+                    <th scope="col">數量</th>
+                    <th scope="col">備註</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>小露寶（按活動需要）</td>
+                    <td>
+                      <div class="input-group">
+                        <input class="form-control" name="equipSpeakerQty" type="number" min="0" step="1" />
+                        <span class="input-group-text">部</span>
+                      </div>
+                    </td>
+                    <td><input class="form-control" name="equipSpeakerNote" type="text" /></td>
+                  </tr>
+                  <tr>
+                    <td>無線咪／有線咪</td>
+                    <td>
+                      <div class="input-group">
+                        <input class="form-control" name="equipMicQty" type="number" min="0" step="1" />
+                        <span class="input-group-text">支</span>
+                      </div>
+                    </td>
+                    <td><input class="form-control" name="equipMicNote" type="text" /></td>
+                  </tr>
+                  <tr>
+                    <td>長檯</td>
+                    <td>
+                      <div class="input-group">
+                        <input class="form-control" name="equipTableQty" type="number" min="0" step="1" />
+                        <span class="input-group-text">張</span>
+                      </div>
+                    </td>
+                    <td><input class="form-control" name="equipTableNote" type="text" /></td>
+                  </tr>
+                  <tr>
+                    <td>椅</td>
+                    <td>
+                      <div class="input-group">
+                        <input class="form-control" name="equipChairQty" type="number" min="0" step="1" />
+                        <span class="input-group-text">張</span>
+                      </div>
+                    </td>
+                    <td><input class="form-control" name="equipChairNote" type="text" /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="booking-panel">
+            <h2>其他資料</h2>
+            <div class="row g-3">
+              <div class="col-12">
+                <label class="form-label" for="other-info">其他資料（如需要）</label>
+                <textarea class="form-control" id="other-info" name="otherInfo" rows="4" placeholder="請填寫特別要求或其他說明"></textarea>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="form-date">填寫日期 <span class="req">*</span></label>
+                <input class="form-control" id="form-date" name="formDate" type="date" required data-today-default />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="signer-name">負責人姓名 <span class="req">*</span></label>
+                <input class="form-control" id="signer-name" name="signerName" type="text" required placeholder="網上申請等同負責人簽署確認" />
+              </div>
+              <div class="col-12">
+                <label class="venue-check">
+                  <input type="checkbox" name="agree" value="yes" required />
+                  <span>本人確認以上資料正確，並明白設備供應需按本會情況決定，申請須經本堂批核後方可作實。</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="booking-actions">
+            <button class="c-btn c-btn--outline" type="reset">清除重填</button>
+            <button class="c-btn c-btn--primary" type="submit">
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> 提交申請
+            </button>
+          </div>
+
+          <div class="booking-alert" data-booking-alert hidden role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" focusable="false">
+        <path d="M0,32 C240,72 480,8 720,40 C960,72 1200,24 1440,48 L1440,80 L0,80 Z"></path>
+      </svg>
+    </div>
+    <div class="container footer-inner">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-5">
+          <h2 class="footer-title">活水浸信會</h2>
+          <p class="footer-tagline">Living Water Baptist Church</p>
+          <p>歡迎你親臨本堂，或以電郵、電話與我們聯絡。</p>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <h3 class="footer-label">聯絡資料</h3>
+          <ul class="footer-contact">
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>九龍觀塘成業街68號<br />68 Shing Yip Street, Kwun Tong, Kowloon</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+85223456789">(852) 2345 6789 / 2345 6790</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:hello@livingwater.example">hello@livingwater.example</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <h3 class="footer-label">關注活水浸</h3>
+          <div class="footer-social" aria-label="社交媒體">
+            <a class="social-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            </a>
+            <a class="social-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <p class="footer-copy">© <span data-year>2026</span> 活水浸信會 Living Water Baptist Church　｜　版權所有</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" data-back-to-top aria-label="返回頁頂">
+    <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+  <script src="js/venue-data.js"></script>
+  <script src="js/booking.js"></script>
+  <script src="js/venue-availability.js"></script>
+</body>
+</html>
