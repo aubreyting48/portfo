@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>課程報名 | 深水埗浸信會</title>
+  <meta name="description" content="深水埗浸信會課程報名表格（即將推出）。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600;700&family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/bibleprogram.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="brand navbar-brand mb-0" href="index.html">
+          <img src="Materials/Logo.png" width="200" height="64" alt="Logo" />
+        </a>
+        <a class="nav-link ms-auto" href="bibleprogram.html">返回課程列表</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="section section-pattern" id="main">
+    <div class="container">
+      <div class="register-stub">
+        <p class="section-kicker">Registration</p>
+        <h1 class="section-title">課程報名表格</h1>
+        <hr class="line-rule" />
+        <p>報名表格頁面稍後建立。</p>
+        <p class="mb-4">你選擇的課程編號：<span class="code" data-program-id>—</span></p>
+        <a class="btn btn-wine" href="bibleprogram.html">返回課程一覽</a>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(location.search);
+    const id = params.get("program") || "（未指定）";
+    const el = document.querySelector("[data-program-id]");
+    if (el) el.textContent = id;
+  </script>
+</body>
+</html>

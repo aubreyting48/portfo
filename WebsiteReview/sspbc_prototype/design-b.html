@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Design B · Crossbeam | 深水埗浸信會</title>
+  <meta name="description" content="深水埗浸信會設計預覽 B：結構斜線、酒紅面板與英雄橫幅輪播。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/design-b.css" />
+</head>
+<body>
+  <div class="preview-bar py-2">
+    <div class="container d-flex flex-wrap align-items-center">
+      <span class="label">SSPBC 設計預覽</span>
+      <a href="index.html">C · 正式主頁</a>
+      <a class="is-active" href="design-b.html">B · Crossbeam</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="主要導覽">
+      <div class="container">
+        <a class="navbar-brand mb-0" href="design-b.html">
+          <img src="Materials/Logo.png" width="160" height="52" alt="Logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navB" aria-controls="navB" aria-expanded="false" aria-label="開啟選單">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navB">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="design-b.html">主頁</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">認識我們</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">每週講道</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">聚會時間</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">教會事工</a></li>
+            <li class="nav-item"><a class="nav-link" href="#news">最新消息</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">借堂/下載</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-split" aria-label="主視覺橫幅">
+      <div class="hero-panel">
+        <h1>深水埗浸信會</h1>
+        <p class="lead">愛鄰舍實踐使命，靠上主建立教會。主日與你相遇於敬拜、真理與群體生活。</p>
+        <div class="cta-row">
+          <a class="btn-outline-light-sharp" href="#">崇拜時間</a>
+          <a class="btn-light-sharp" href="#">聯絡我們</a>
+        </div>
+      </div>
+
+      <div class="hero-slider-wrap">
+        <div class="angle-frame" aria-hidden="true"></div>
+        <div id="heroB" class="carousel slide hero-carousel" data-bs-ride="carousel" data-bs-interval="6000">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroB" data-bs-slide-to="0" class="active" aria-current="true" aria-label="第 1 張"></button>
+            <button type="button" data-bs-target="#heroB" data-bs-slide-to="1" aria-label="第 2 張"></button>
+            <button type="button" data-bs-target="#heroB" data-bs-slide-to="2" aria-label="第 3 張"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80')" role="img" aria-label="山嶺晨光"></div>
+            </div>
+            <div class="carousel-item">
+              <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1507692049790-de982441963b?auto=format&fit=crop&w=1600&q=80')" role="img" aria-label="教會建築"></div>
+            </div>
+            <div class="carousel-item">
+              <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1478147427282-58a87a120781?auto=format&fit=crop&w=1600&q=80')" role="img" aria-label="社區光景"></div>
+            </div>
+          </div>
+        </div>
+        <div class="scripture-band">
+          <p>
+            「祢的話是我腳前的燈，是我路上的光。」
+            <cite>詩篇 119:105 · 本月金句</cite>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-steel">
+      <span class="slash-deco" style="top:3rem;left:8%" aria-hidden="true"></span>
+      <span class="slash-deco" style="top:4.2rem;left:12%;opacity:.3" aria-hidden="true"></span>
+      <div class="container">
+        <p class="section-kicker">Ministries</p>
+        <h2 class="section-title">教會生活</h2>
+        <hr class="line-rule" />
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="feature-block">
+              <h3>每週講道</h3>
+              <p>重溫主日信息，按經文與講員查找影音。</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-block">
+              <h3>聚會時間</h3>
+              <p>主日崇拜、祈禱會、團契與培育課程。</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-block">
+              <h3>借堂 / 下載</h3>
+              <p>堂所借用查詢與常用表格下載。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-ink">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <p class="section-kicker">About</p>
+            <h2 class="section-title">深浸簡史與信仰</h2>
+            <hr class="line-rule line-rule-gold" />
+            <p class="mb-4">以清晰的結構線條呈現堂會故事——用文字與真實影像，而非整頁掃描圖，讓新朋友也能快速讀懂我們是誰。</p>
+            <a class="btn-outline-light-sharp" href="#">深浸簡史</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="news">
+      <div class="container">
+        <p class="section-kicker">Updates</p>
+        <h2 class="section-title">最新消息</h2>
+        <hr class="line-rule" />
+        <div class="row g-3">
+          <div class="col-md-4">
+            <a class="news-tile" href="#">
+              <time datetime="2026-09-20">2026-09-20</time>
+              <h3>主日祈禱會</h3>
+              <p>每月第三主日上午 9:45–10:30</p>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a class="news-tile" href="#">
+              <time datetime="2026-09-01">2026-09-01</time>
+              <h3>奉獻方法</h3>
+              <p>銀行轉帳與堂內奉獻指引</p>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a class="news-tile" href="#">
+              <time datetime="2026-08-15">2026-08-15</time>
+              <h3>惡劣天氣聚會指引</h3>
+              <p>颱風及暴雨安排一覽</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <strong style="color:#fff">深水埗浸信會</strong>
+          <p class="mt-2 mb-0" style="color:var(--mist)">斜角線條 · 酒紅結構面板 · 藍灰斜紋背景</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="https://www.facebook.com/sspbc.hk" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <p class="mb-0">© 2026 深水埗浸信會。設計預覽 B · Crossbeam</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
