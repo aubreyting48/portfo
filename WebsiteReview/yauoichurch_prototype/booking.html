@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>場地預約 | 社區堂會</title>
+  <meta name="description" content="社區堂會場地預約：選擇場地後按「新增場地預約」提交申請。支援 活動中心、社區堂會及 2723 室。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="社區堂會主頁"><img src="Materials/Logo.png" alt="Logo" width="220" height="56" /></a>
+      <nav class="site-nav" id="primary-nav" data-nav aria-label="主要導覽">
+        <ul class="nav-list">
+          <li class="has-submenu" data-submenu>
+            <button class="nav-parent" type="button" aria-expanded="false" aria-controls="menu-about" data-submenu-toggle>認識我們 <span class="nav-caret" aria-hidden="true"></span></button>
+            <ul class="submenu" id="menu-about">
+              <li><a href="#">本堂介紹</a></li>
+              <li><a href="#">信仰立場</a></li>
+              <li><a href="our-workers.html">同工介紹</a></li>
+              <li><a href="#">奉獻指引</a></li>
+              <li><a href="#">颱風及暴雨安排</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu" data-submenu>
+            <button class="nav-parent" type="button" aria-expanded="false" aria-controls="menu-worship" data-submenu-toggle>崇拜聚會 <span class="nav-caret" aria-hidden="true"></span></button>
+            <ul class="submenu" id="menu-worship">
+              <li><a href="index.html#worship">崇拜時間</a></li>
+              <li><a href="#">崇拜公約</a></li>
+              <li><a href="index.html#sermons">講道重溫</a></li>
+              <li><a href="#">崇拜事奉名單</a></li>
+              <li><a href="fellowship-meet.html">團契聚會</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu" data-submenu>
+            <button class="nav-parent" type="button" aria-expanded="false" aria-controls="menu-news" data-submenu-toggle>家訊 <span class="nav-caret" aria-hidden="true"></span></button>
+            <ul class="submenu" id="menu-news">
+              <li><a href="index.html#news">家訊消息</a></li>
+              <li><a href="index.html#about">牧者心聲</a></li>
+              <li><a href="index.html#prayer">代禱事項</a></li>
+              <li><a href="#">屬靈文章</a></li>
+              <li><a href="#">書籍推介</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu" data-submenu>
+            <button class="nav-parent" type="button" aria-expanded="false" aria-controls="menu-ministry" data-submenu-toggle>事工 <span class="nav-caret" aria-hidden="true"></span></button>
+            <ul class="submenu" id="menu-ministry">
+              <li><a href="#">兒童部</a></li>
+              <li><a href="#">青少年區</a></li>
+              <li><a href="#">青成區</a></li>
+              <li><a href="#">成人區</a></li>
+              <li><a href="#">第二聚會點</a></li>
+              <li><a href="#">友愛鄰舍服務</a></li>
+              <li><a href="#">部門一覽</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu" data-submenu>
+            <button class="nav-parent" type="button" aria-expanded="false" aria-controls="menu-events" data-submenu-toggle>活動 <span class="nav-caret" aria-hidden="true"></span></button>
+            <ul class="submenu" id="menu-events">
+              <li><a href="#">行事曆</a></li>
+              <li><a href="#">活動報名</a></li>
+              <li><a href="#">活動回顧</a></li>
+            </ul>
+          </li>
+          <li><a href="booking.html" aria-current="page">場地預約</a></li>
+          <li><a href="contact-us.html">聯絡</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a class="c-btn c-btn--primary c-btn--sm" href="index.html#visit">計劃探訪</a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="primary-nav" aria-label="開啟選單"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero page-hero--booking">
+      <div class="container">
+        <nav class="page-breadcrumb" aria-label="麵包屑">
+          <a href="index.html">主頁</a><span aria-hidden="true">/</span><span aria-current="page">場地預約</span>
+        </nav>
+        <h1>場地預約</h1>
+        <p class="page-lead">選擇場地後按「搜尋」查看已預約時段；新增申請時可設定開始時間與時長，讓同一場地分時供多組使用。</p>
+      </div>
+    </section>
+
+    <section class="page-main">
+      <div class="container">
+        <p class="booking-help">步驟：① 選擇場地並按「搜尋」查看已預約時段 → ② 按「新增場地預約」→ ③ 選擇開始時間與時長。同一日可分時段予多組使用者。</p>
+
+        <div class="booking-toolbar">
+          <div class="booking-field booking-field--venue">
+            <label for="venue-select">搜尋場地預約</label>
+            <div class="booking-search-row">
+              <select id="venue-select" name="venue">
+                <option value="all">所有場地</option>
+                <option value="yo">活動中心</option>
+                <option value="yauoi">社區堂會</option>
+                <option value="2723">2723室（必須有同工在場）</option>
+                <option value="yo-2628">活動中心（2628室）</option>
+              </select>
+              <button class="c-btn c-btn--primary" type="button" data-booking-search>搜尋</button>
+            </div>
+          </div>
+          <button class="c-btn" type="button" data-booking-add style="border:1px solid var(--line);background:#fff;">＋ 新增場地預約</button>
+        </div>
+
+        <div class="booking-results" id="booking-results" hidden data-booking-results>
+          <div class="booking-results__head">
+            <h2 data-results-title>預約一覽</h2>
+            <p class="booking-help mb-0" data-results-summary></p>
+          </div>
+          <div class="table-wrap booking-results__table">
+            <table class="fellowship-table booking-appointments">
+              <thead>
+                <tr>
+                  <th scope="col">日期</th>
+                  <th scope="col">時段</th>
+                  <th scope="col">時長</th>
+                  <th scope="col">場地</th>
+                  <th scope="col">用途</th>
+                  <th scope="col">狀態</th>
+                </tr>
+              </thead>
+              <tbody data-results-body></tbody>
+            </table>
+          </div>
+          <div class="booking-result-cards" data-results-cards aria-label="預約結果卡片"></div>
+          <p class="info-note mt-3 mb-0" data-results-empty hidden>此場地暫無已預約記錄，全日各時段均可申請。</p>
+        </div>
+
+        <div class="booking-calendar mt-4" data-booking-calendar>
+          <div class="booking-calendar__head">
+            <h2 data-cal-title>2026年9月</h2>
+            <div class="cal-nav">
+              <button type="button" data-cal-prev aria-label="上一個月">‹</button>
+              <button type="button" data-cal-next aria-label="下一個月">›</button>
+            </div>
+          </div>
+          <div class="cal-grid" data-cal-grid aria-label="場地預約月曆">
+            <span>日</span><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span>
+          </div>
+          <div class="booking-legend">
+            <span><i></i>可預約</span>
+            <span><i class="busy"></i>部分時段已約</span>
+            <span><i class="full"></i>時段較滿</span>
+          </div>
+        </div>
+
+        <div class="content-panel mt-4" id="day-slots-panel" hidden data-day-slots>
+          <h2 data-day-slots-title>當日可預約時段</h2>
+          <p class="booking-help">已約時段不可重疊；其餘時段可供其他組別申請。</p>
+          <ul class="booking-slot-list" data-day-slot-list></ul>
+        </div>
+
+        <div class="content-panel mt-4" id="booking-form-panel" hidden>
+          <h2>借用場地</h2>
+          <p class="booking-help mb-3">表單欄位對照現行 <a href="#/booking_reg.php" target="_blank" rel="noopener noreferrer">場地預約報名表</a>；並保留時段衝突檢查。</p>
+
+          <aside class="booking-notice" aria-labelledby="booking-notice-title">
+            <h3 id="booking-notice-title">預約須知</h3>
+            <ul>
+              <li>預約本堂及活動中心 場地需要 2 個工作天批核。如活動前一天／即日預約場地，將以先到先得的形式安排。</li>
+              <li>社區中心只接受電話預約，請致電聯絡社區中心同工。</li>
+              <li>事前未有預約者，請先致電場地，以確認有同工當值。</li>
+              <li>如有任何爭議，社區堂會將保留更改預約資料或取消之權利。</li>
+            </ul>
+            <p class="booking-notice__phones"><strong>本堂及各中心電話</strong>　主堂：<a href="tel:+85224502380">2450 2380</a>　活動中心：<a href="tel:+85235251235">3525 1235</a>　社區中心：<a href="tel:+85224500742">2450 0742</a></p>
+          </aside>
+
+          <form class="row g-3" data-booking-form>
+            <div class="col-md-4">
+              <label class="form-label" for="book-name">姓名 <span class="req">*</span></label>
+              <input class="form-control" id="book-name" name="name" type="text" required autocomplete="name" />
+            </div>
+            <div class="col-md-4">
+              <label class="form-label" for="book-email">電郵 <span class="req">*</span></label>
+              <input class="form-control" id="book-email" name="email" type="email" required autocomplete="email" />
+            </div>
+            <div class="col-md-4">
+              <label class="form-label" for="book-phone">電話 <span class="req">*</span></label>
+              <input class="form-control" id="book-phone" name="phone" type="tel" required autocomplete="tel" />
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label" for="book-venue">借用場地 <span class="req">*</span></label>
+              <select class="form-select" id="book-venue" name="venue" required>
+                <option value="">請選擇</option>
+                <option value="yo">活動中心</option>
+                <option value="yo-2628">活動中心（2628室）</option>
+                <option value="yauoi">社區堂會</option>
+                <option value="2723">2723室（必須有同工在場）</option>
+              </select>
+              <p class="form-text mb-0">「社區中心」只接受電話預約</p>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" for="book-room">課室或房間 <span class="req">*</span></label>
+              <select class="form-select" id="book-room" name="room" required>
+                <option value="">請選擇</option>
+                <option value="activity-a">活動室A</option>
+                <option value="activity-b">活動室B</option>
+                <option value="activity-c">活動室C</option>
+                <option value="activity-d">活動室D</option>
+                <option value="hall">禮堂</option>
+                <option value="counseling">輔導室</option>
+              </select>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label" for="book-purpose">用途 <span class="req">*</span></label>
+              <input class="form-control" id="book-purpose" name="purpose" type="text" required />
+            </div>
+
+            <div class="col-12">
+              <div class="booking-repeat">
+                <label class="booking-check" for="book-repeat">
+                  <input type="checkbox" id="book-repeat" name="repeat" data-booking-repeat />
+                  <span>重覆借用</span>
+                </label>
+                <p class="form-text mb-0">勾選後可設定結束日期及每周星期，方便定期聚會申請。</p>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label" for="book-date">借用日期 <span class="req">*</span></label>
+              <input class="form-control" id="book-date" name="start_date" type="date" required />
+            </div>
+            <div class="col-md-6" data-repeat-fields hidden>
+              <label class="form-label" for="book-end-date">結束借用日期 <span class="req">*</span></label>
+              <input class="form-control" id="book-end-date" name="end_date" type="date" />
+            </div>
+
+            <div class="col-12" data-repeat-fields hidden>
+              <fieldset class="booking-weekdays">
+                <legend>周日 <span class="req">*</span></legend>
+                <div class="booking-weekdays__list">
+                  <label class="booking-check"><input type="checkbox" name="weekday" value="1" /> 星期一</label>
+                  <label class="booking-check"><input type="checkbox" name="weekday" value="2" /> 星期二</label>
+                  <label class="booking-check"><input type="checkbox" name="weekday" value="3" /> 星期三</label>
+                  <label class="booking-check"><input type="checkbox" name="weekday" value="4" /> 星期四</label>
+                  <label class="booking-check"><input type="checkbox" name="weekday" value="5" /> 星期五</label>
+                  <label class="booking-check"><input type="checkbox" name="weekday" value="6" /> 星期六</label>
+                  <label class="booking-check"><input type="checkbox" name="weekday" value="0" /> 星期日</label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label" for="book-start">開始時間 <span class="req">*</span></label>
+              <select class="form-select" id="book-start" name="start_time" required>
+                <option value="">請選擇</option>
+                <option value="08:00">08:00</option>
+                <option value="08:30">08:30</option>
+                <option value="09:00">09:00</option>
+                <option value="09:30">09:30</option>
+                <option value="10:00">10:00</option>
+                <option value="10:30">10:30</option>
+                <option value="11:00">11:00</option>
+                <option value="11:30">11:30</option>
+                <option value="12:00">12:00</option>
+                <option value="12:30">12:30</option>
+                <option value="13:00">13:00</option>
+                <option value="13:30">13:30</option>
+                <option value="14:00">14:00</option>
+                <option value="14:30">14:30</option>
+                <option value="15:00">15:00</option>
+                <option value="15:30">15:30</option>
+                <option value="16:00">16:00</option>
+                <option value="16:30">16:30</option>
+                <option value="17:00">17:00</option>
+                <option value="17:30">17:30</option>
+                <option value="18:00">18:00</option>
+                <option value="18:30">18:30</option>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label" for="book-duration">使用時長 <span class="req">*</span></label>
+              <select class="form-select" id="book-duration" name="duration" required>
+                <option value="">請選擇</option>
+                <option value="30">30 分鐘</option>
+                <option value="60">1 小時</option>
+                <option value="90">1.5 小時</option>
+                <option value="120">2 小時</option>
+                <option value="180">3 小時</option>
+                <option value="240">4 小時</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label" for="book-end">結束時間 <span class="req">*</span></label>
+              <input class="form-control" id="book-end" name="end_time" type="text" readonly required placeholder="自動計算" aria-live="polite" />
+            </div>
+
+            <div class="col-12">
+              <p class="booking-hours-note">
+                <strong>可預約時間</strong><br />
+                主堂：星期六 12:30–20:00，星期日 08:00–16:00<br />
+                活動中心：星期一至六 10:00–18:00，星期日 14:00–18:00
+              </p>
+              <p class="booking-slot-hint" data-slot-hint>選擇開始時間與時長後，將顯示預計時段並檢查是否與現有預約重疊。</p>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label" for="book-remarks">備註 <span class="req">*</span></label>
+              <textarea class="form-control" id="book-remarks" name="remarks" rows="4" required placeholder="請提供：(A) 條碼卡號碼　(B) 部門／負責同工"></textarea>
+              <p class="form-text mb-0">請提供以下資料，如果沒有提供，該預約會被拒絕。(A) 條碼卡號碼 (B) 部門／負責同工</p>
+            </div>
+
+            <div class="col-12 d-flex gap-2 flex-wrap">
+              <button class="c-btn c-btn--primary" type="submit">確認提交</button>
+              <button class="c-btn" type="button" data-booking-cancel style="border:1px solid var(--line);background:#fff;">返回</button>
+            </div>
+          </form>
+          <p class="info-note" data-booking-success hidden>已收到申請示意（示範用，未送出伺服器）。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4 footer-grid">
+        <div class="col-12 col-md-6 col-lg-4 footer-brand">
+          <img src="Materials/Logo.png" alt="Logo" width="200" height="52" />
+          <p>我們歡迎您</p>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h3>快速連結</h3>
+          <ul>
+            <li><a href="our-workers.html">同工介紹</a></li>
+            <li><a href="fellowship-meet.html">團契聚會</a></li>
+            <li><a href="booking.html">場地預約</a></li>
+            <li><a href="contact-us.html">聯絡我們</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3"><h3>聚會點</h3><ul><li>社區堂會</li><li>活動中心</li><li>社區中心</li><li>第二聚會點</li><li>鄰舍中心</li></ul></div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h3>聯絡</h3>
+          <ul>
+            <li>地址：屯門</li>
+            <li><a href="tel:+85224502380">電話：2450 2380</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"><div class="container footer-bottom-inner"><p class="mb-0">© <span data-year>2026</span> 社區堂會 版權所有</p><a href="#">私隱政策</a></div></div>
+  </footer>
+  <button class="back-to-top" type="button" data-back-to-top aria-label="返回頁頂">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 5.5 5.8 11.7l1.4 1.4L11 9.3V19h2V9.3l3.8 3.8 1.4-1.4z"/></svg>
+  </button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
