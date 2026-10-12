@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>捐款支持 | 希望同行 Hope Collective</title>
+  <meta name="description" content="支持希望同行一次性、月捐或年捐計劃，為有需要的孩子及弱勢社群提供援助。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header" data-header>
+    <div class="container header-top">
+      <a class="brand" href="index.html">
+        <img src="Materials/Logo.png" alt="Logo" />
+        <span class="brand-text">
+          <strong>希望同行</strong>
+          <small>Hope Collective</small>
+        </span>
+      </a>
+
+      <div class="header-actions">
+        <div class="header-social" aria-label="社交媒體">
+          <a class="social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          </a>
+          <a class="social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <form class="header-search header-search--desktop" role="search" action="#" method="get">
+          <label class="visually-hidden" for="donation-search-desktop">搜尋</label>
+          <input id="donation-search-desktop" type="search" name="q" placeholder="搜尋…" autocomplete="off" />
+          <button type="submit" aria-label="提交搜尋">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 5L20.49 19l-5-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+            </svg>
+          </button>
+        </form>
+
+        <button class="util-link util-search" type="button" data-search-toggle aria-expanded="false" aria-controls="header-search-panel" aria-label="開啟搜尋">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 5L20.49 19l-5-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+          </svg>
+        </button>
+
+        <a class="c-btn c-btn--primary c-btn--sm" href="donation.html">捐款支持</a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="primary-nav" aria-label="開啟選單">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="header-search-panel" id="header-search-panel" data-search-panel hidden>
+      <form class="container header-search header-search--mobile" role="search" action="#" method="get">
+        <label class="visually-hidden" for="donation-search-mobile">搜尋</label>
+        <input id="donation-search-mobile" type="search" name="q" placeholder="搜尋…" autocomplete="off" data-search-input />
+        <button type="submit" aria-label="提交搜尋">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 5L20.49 19l-5-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <div class="container header-nav-row">
+      <nav class="site-nav" id="primary-nav" data-nav aria-label="主要導覽">
+        <ul class="nav-list">
+          <li class="has-submenu" data-submenu>
+            <button class="nav-parent" type="button" aria-expanded="false" aria-controls="menu-about" data-submenu-toggle>
+              關於我們 <span class="nav-caret" aria-hidden="true"></span>
+            </button>
+            <ul class="submenu" id="menu-about">
+              <li><a href="#">宗旨</a></li>
+              <li><a href="#">架構</a></li>
+              <li><a href="#">主席的話</a></li>
+              <li><a href="#">電子快訊/刊物</a></li>
+              <li><a href="milestone.html">里程碑</a></li>
+              <li><a href="#">財務簡報</a></li>
+              <li><a href="join.html">成為義工</a></li>
+              <li><a href="#">職位空缺</a></li>
+              <li><a href="#">聯絡我們</a></li>
+            </ul>
+          </li>
+
+          <li class="has-submenu" data-submenu>
+            <button class="nav-parent" type="button" aria-expanded="false" aria-controls="menu-mainland" data-submenu-toggle>
+              內地服務 <span class="nav-caret" aria-hidden="true"></span>
+            </button>
+            <ul class="submenu" id="menu-mainland">
+              <li><a href="#">關於留守及困境兒童</a></li>
+              <li><a href="#">緊急救災及扶貧</a></li>
+              <li class="has-submenu has-submenu--nested" data-submenu>
+                <button class="nav-parent" type="button" aria-expanded="false" aria-controls="menu-mainland-care" data-submenu-toggle>
+                  社會關懷服務 <span class="nav-caret" aria-hidden="true"></span>
+                </button>
+                <ul class="submenu submenu--l3" id="menu-mainland-care">
+                  <li><a href="#">義工能力建設培訓</a></li>
+                  <li><a href="#">捐贈器材及健康檢查</a></li>
+                  <li><a href="#">愛心探訪</a></li>
+                  <li><a href="#">物資捐贈</a></li>
+                  <li><a href="#">關愛留守服務點</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu has-submenu--nested" data-submenu>
+                <button class="nav-parent" type="button" aria-expanded="false" aria-controls="menu-mainland-school" data-submenu-toggle>
+                  校園服務 <span class="nav-caret" aria-hidden="true"></span>
+                </button>
+                <ul class="submenu submenu--l3" id="menu-mainland-school">
+                  <li><a href="#">愛學坊多功能活動室</a></li>
+                  <li><a href="#">助學項目</a></li>
+                  <li><a href="#">學生工作坊</a></li>
+                  <li><a href="#">愛心探訪</a></li>
+                  <li><a href="#">物資捐贈</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="has-submenu" data-submenu>
+            <button class="nav-parent" type="button" aria-expanded="false" aria-controls="menu-hk" data-submenu-toggle>
+              香港服務 <span class="nav-caret" aria-hidden="true"></span>
+            </button>
+            <ul class="submenu" id="menu-hk">
+              <li class="has-submenu has-submenu--nested" data-submenu>
+                <button class="nav-parent" type="button" aria-expanded="false" aria-controls="menu-hk-campus" data-submenu-toggle>
+                  校園生命工程 <span class="nav-caret" aria-hidden="true"></span>
+                </button>
+                <ul class="submenu submenu--l3" id="menu-hk-campus">
+                  <li><a href="#">英才領袖培育獎學金計劃（大學）</a></li>
+                  <li><a href="#">英才培育獎學金計劃（中學）</a></li>
+                  <li><a href="#">生命教育3.0計劃</a></li>
+                  <li><a href="#">校園音樂會</a></li>
+                  <li><a href="#">合作學校</a></li>
+                  <li><a href="#">義工培訓</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu has-submenu--nested" data-submenu>
+                <button class="nav-parent" type="button" aria-expanded="false" aria-controls="menu-hk-care" data-submenu-toggle>
+                  社會關懷服務 <span class="nav-caret" aria-hidden="true"></span>
+                </button>
+                <ul class="submenu submenu--l3" id="menu-hk-care">
+                  <li><a href="#">家長心靈加油站</a></li>
+                  <li><a href="#">支援宏福苑居民</a></li>
+                  <li><a href="#">疫有祝福全人關懷3.0計劃</a></li>
+                  <li><a href="#">抗疫物資捐贈</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="#">籌款活動</a></li>
+          <li><a href="news.html">活動資訊</a></li>
+
+          <li class="has-submenu" data-submenu>
+            <button class="nav-parent" type="button" aria-expanded="false" aria-controls="menu-feedback" data-submenu-toggle>
+              各方迴響 <span class="nav-caret" aria-hidden="true"></span>
+            </button>
+            <ul class="submenu" id="menu-feedback">
+              <li><a href="#">義工心聲</a></li>
+              <li><a href="#">受助學校感言</a></li>
+              <li><a href="#">受助學生感言</a></li>
+              <li><a href="#">受助單位感言</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="page-breadcrumb"><a href="index.html">主頁</a> / 捐款支持</p>
+      <h1>捐款支持</h1>
+    </div>
+  </section>
+
+  <main class="page-main" id="main">
+    <div class="container">
+      <div class="donate-steps" data-donate-flow>
+        <!-- Step 1 -->
+        <section class="donate-step" data-donate-step="1" aria-labelledby="donate-step1-title">
+          <div class="donate-step-heading">
+            <span class="donate-step-badge">步驟 1</span>
+            <h2 id="donate-step1-title" class="donate-step-label">選擇捐款類型及支持項目</h2>
+          </div>
+
+          <p class="donate-step-lead">請先選擇捐款類型，再從下列項目中選出您想支持的計劃。</p>
+
+          <p class="donate-sublabel">捐款類型</p>
+          <div class="row g-3 mb-4" role="radiogroup" aria-label="選擇捐款類型" data-donate-type-group>
+            <div class="col-md-4">
+              <button class="donate-type-card is-selected w-100 h-100" type="button" role="radio" aria-checked="true" data-donate-type="once">
+                <h3>一次性捐款</h3>
+                <p>希望同行珍惜您每一分一毫的捐獻，您的慷慨解囊能支持本機構發展各個項目，為有需要的孩子及弱勢社群提供援助。</p>
+              </button>
+            </div>
+            <div class="col-md-4">
+              <button class="donate-type-card w-100 h-100" type="button" role="radio" aria-checked="false" data-donate-type="monthly">
+                <h3>月捐計劃</h3>
+                <p>每月捐款能提供穩定可靠的收入，讓希望同行可持續發展項目。此外，月捐計劃可以減低行政開支，能更有效幫助有需要的群體。</p>
+              </button>
+            </div>
+            <div class="col-md-4">
+              <button class="donate-type-card w-100 h-100" type="button" role="radio" aria-checked="false" data-donate-type="yearly">
+                <h3>年捐計劃</h3>
+                <p>每年定期捐款有助機構長遠規劃，讓支援服務更可持續，惠及更多有需要的孩子及社群。</p>
+              </button>
+            </div>
+          </div>
+
+          <p class="donate-sublabel">選擇支持項目</p>
+          <div class="donate-programs" role="radiogroup" aria-label="選擇捐款項目" data-donate-program-group>
+            <section class="donate-program-group" aria-labelledby="donate-intl-title">
+              <h3 id="donate-intl-title" class="donate-program-group-title">國際緊急救援項目</h3>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <article
+                    class="donate-program-card h-100"
+                    role="radio"
+                    aria-checked="false"
+                    tabindex="0"
+                    data-donate-program="intl-mudslide"
+                    data-program-title="西藏|尼泊爾爆發泥石流災難"
+                    data-program-category="國際緊急救援項目"
+                    data-program-detail="西藏及尼泊爾地區爆發特大泥石流，災情極度嚴峻。災區道路受阻、民居損毀，急需緊急物資、醫療支援及重建援助。您的捐款將用於應急救援、臨時安置及受災家庭的基本生活支援。"
+                  >
+                    <div class="donate-program-card-top">
+                      <h4 class="donate-program-card-title">西藏|尼泊爾爆發泥石流災難</h4>
+                      <span class="donate-program-select-mark" aria-hidden="true"></span>
+                    </div>
+                    <p class="donate-program-card-desc">西藏|尼泊爾爆發特大泥石流——災情極度嚴峻，急需緊急支援!!</p>
+                    <div class="donate-program-card-actions">
+                      <button class="c-btn c-btn--outline c-btn--sm" type="button" data-donate-detail>了解更多</button>
+                      <button class="c-btn c-btn--primary c-btn--sm" type="button" data-donate-select>選擇此項目</button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </section>
+
+            <section class="donate-program-group" aria-labelledby="donate-cn-title">
+              <h3 id="donate-cn-title" class="donate-program-group-title">中國兒童關愛工程</h3>
+              <div class="row g-3">
+                <div class="col-md-6 col-lg-4">
+                  <article
+                    class="donate-program-card h-100"
+                    role="radio"
+                    aria-checked="false"
+                    tabindex="0"
+                    data-donate-program="cn-secondary"
+                    data-program-title="中學助學金(每月HK$300)"
+                    data-program-category="中國兒童關愛工程"
+                    data-suggested="300"
+                    data-program-amount="HK$7,200"
+                    data-program-detail="每月港幣$300的中學助學金，合共約HK$7,200，可為留守或困境中學生提供兩年學習開支，並配合正向價值工作坊，支援學業與品格成長。"
+                  >
+                    <div class="donate-program-card-top">
+                      <h4 class="donate-program-card-title">中學助學金(每月HK$300)</h4>
+                      <span class="donate-program-select-mark" aria-hidden="true"></span>
+                    </div>
+                    <span class="donate-program-card-amount">HK$7,200</span>
+                    <p class="donate-program-card-desc">提供每名中學生2年學習開支及正向價值工作坊</p>
+                    <div class="donate-program-card-actions">
+                      <button class="c-btn c-btn--outline c-btn--sm" type="button" data-donate-detail>了解更多</button>
+                      <button class="c-btn c-btn--primary c-btn--sm" type="button" data-donate-select>選擇此項目</button>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <article
+                    class="donate-program-card h-100"
+                    role="radio"
+                    aria-checked="false"
+                    tabindex="0"
+                    data-donate-program="cn-uni"
+                    data-program-title="大學助學金(每月HK$650)"
+                    data-program-category="中國兒童關愛工程"
+                    data-suggested="650"
+                    data-program-amount="HK$30,000"
+                    data-program-detail="每月港幣$650的大學助學金，合共約HK$30,000，可為困境大學生提供四年學習開支及正向價值工作坊，助他們完成高等教育並回饋社會。"
+                  >
+                    <div class="donate-program-card-top">
+                      <h4 class="donate-program-card-title">大學助學金(每月HK$650)</h4>
+                      <span class="donate-program-select-mark" aria-hidden="true"></span>
+                    </div>
+                    <span class="donate-program-card-amount">HK$30,000</span>
+                    <p class="donate-program-card-desc">提供每名大學生4年學習開支及正向價值工作坊</p>
+                    <div class="donate-program-card-actions">
+                      <button class="c-btn c-btn--outline c-btn--sm" type="button" data-donate-detail>了解更多</button>
+                      <button class="c-btn c-btn--primary c-btn--sm" type="button" data-donate-select>選擇此項目</button>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <article
+                    class="donate-program-card h-100"
+                    role="radio"
+                    aria-checked="false"
+                    tabindex="0"
+                    data-donate-program="cn-classroom"
+                    data-program-title="愛學坊多功能活動室"
+                    data-program-category="中國兒童關愛工程"
+                    data-suggested="70000"
+                    data-program-amount="HK$70,000"
+                    data-program-detail="HK$70,000可幫助一間農村或山區留守兒童小學建設愛學坊多功能活動室，改善教學環境，讓孩子在更安全、更適合學習與活動的空間成長。"
+                  >
+                    <div class="donate-program-card-top">
+                      <h4 class="donate-program-card-title">愛學坊多功能活動室</h4>
+                      <span class="donate-program-select-mark" aria-hidden="true"></span>
+                    </div>
+                    <span class="donate-program-card-amount">HK$70,000</span>
+                    <p class="donate-program-card-desc">可幫助1間農村或山區留守兒童小學建設愛學坊多功能活動室優化教育質素</p>
+                    <div class="donate-program-card-actions">
+                      <button class="c-btn c-btn--outline c-btn--sm" type="button" data-donate-detail>了解更多</button>
+                      <button class="c-btn c-btn--primary c-btn--sm" type="button" data-donate-select>選擇此項目</button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </section>
+
+            <section class="donate-program-group" aria-labelledby="donate-hk-campus-title">
+              <h3 id="donate-hk-campus-title" class="donate-program-group-title">校園生命工程（香港）</h3>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <article
+                    class="donate-program-card h-100"
+                    role="radio"
+                    aria-checked="false"
+                    tabindex="0"
+                    data-donate-program="hk-secondary"
+                    data-program-title="英才培育月捐計劃(中學生每月HK$550)"
+                    data-program-category="校園生命工程（香港）"
+                    data-suggested="550"
+                    data-program-amount="HK$20,000"
+                    data-program-detail="每月港幣$550的英才培育月捐，合共約HK$20,000，可為每名中學生提供三年獎學金及活動費，培育品格、領導力與社會關懷，助他們成為未來棟樑。"
+                  >
+                    <div class="donate-program-card-top">
+                      <h4 class="donate-program-card-title">英才培育月捐計劃(中學生每月HK$550)</h4>
+                      <span class="donate-program-select-mark" aria-hidden="true"></span>
+                    </div>
+                    <span class="donate-program-card-amount">HK$20,000</span>
+                    <p class="donate-program-card-desc">可提供每名中學生3年獎學金及活動費，讓他們成為社會未來棟樑</p>
+                    <div class="donate-program-card-actions">
+                      <button class="c-btn c-btn--outline c-btn--sm" type="button" data-donate-detail>了解更多</button>
+                      <button class="c-btn c-btn--primary c-btn--sm" type="button" data-donate-select>選擇此項目</button>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-md-6">
+                  <article
+                    class="donate-program-card h-100"
+                    role="radio"
+                    aria-checked="false"
+                    tabindex="0"
+                    data-donate-program="hk-uni"
+                    data-program-title="英才領袖培育月捐計劃(大學生每月HK$850)"
+                    data-program-category="校園生命工程（香港）"
+                    data-suggested="850"
+                    data-program-amount="HK$30,000"
+                    data-program-detail="每月港幣$850的英才領袖培育月捐，合共約HK$30,000，可為每名大學生提供三年獎學金及活動費，強化領導培育與生涯規劃，助他們成為社會未來精英。"
+                  >
+                    <div class="donate-program-card-top">
+                      <h4 class="donate-program-card-title">英才領袖培育月捐計劃(大學生每月HK$850)</h4>
+                      <span class="donate-program-select-mark" aria-hidden="true"></span>
+                    </div>
+                    <span class="donate-program-card-amount">HK$30,000</span>
+                    <p class="donate-program-card-desc">可提供每名大學生3年獎學金及活動費，讓他們成為社會未來精英</p>
+                    <div class="donate-program-card-actions">
+                      <button class="c-btn c-btn--outline c-btn--sm" type="button" data-donate-detail>了解更多</button>
+                      <button class="c-btn c-btn--primary c-btn--sm" type="button" data-donate-select>選擇此項目</button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </section>
+
+            <section class="donate-program-group mb-0" aria-labelledby="donate-hk-care-title">
+              <h3 id="donate-hk-care-title" class="donate-program-group-title">社區關愛服務（香港）</h3>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <article
+                    class="donate-program-card h-100"
+                    role="radio"
+                    aria-checked="false"
+                    tabindex="0"
+                    data-donate-program="hk-wangfuk"
+                    data-program-title="大埔宏福苑5級大火緊急呼籲"
+                    data-program-category="社區關愛服務（香港）"
+                    data-program-detail="大埔宏福苑5級大火造成嚴重傷亡，不少居民頓失家園。捐款將用於緊急援助、物資支援及受影響家庭的關懷服務，懇請您立刻伸出援手。"
+                  >
+                    <div class="donate-program-card-top">
+                      <h4 class="donate-program-card-title">大埔宏福苑5級大火緊急呼籲</h4>
+                      <span class="donate-program-select-mark" aria-hidden="true"></span>
+                    </div>
+                    <p class="donate-program-card-desc">大埔宏福苑5級大火傷亡慘重，急需您立刻伸出援手！</p>
+                    <div class="donate-program-card-actions">
+                      <button class="c-btn c-btn--outline c-btn--sm" type="button" data-donate-detail>了解更多</button>
+                      <button class="c-btn c-btn--primary c-btn--sm" type="button" data-donate-select>選擇此項目</button>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <p class="donate-step1-hint" data-donate-step1-hint hidden>請先選擇一個支持項目，再繼續下一步。</p>
+          <div class="donate-step-actions">
+            <button class="c-btn c-btn--primary" type="button" data-donate-next disabled>繼續至步驟 2</button>
+          </div>
+        </section>
+
+        <!-- Step 2 -->
+        <section class="donate-step" data-donate-step="2" hidden aria-labelledby="donate-step2-title">
+          <div class="donate-step-heading">
+            <span class="donate-step-badge">步驟 2</span>
+            <h2 id="donate-step2-title" class="donate-step-label">填寫捐款資料</h2>
+          </div>
+
+          <div class="donate-summary" data-donate-summary>
+            <p class="donate-summary-label">您選擇的項目</p>
+            <p class="donate-summary-program" data-donate-summary-program>—</p>
+            <p class="donate-summary-type">捐款類型：<strong data-donate-summary-type>一次性捐款</strong></p>
+          </div>
+
+          <form class="page-form donate-form" action="#" method="post" data-donate-form>
+            <fieldset class="page-form-fieldset">
+              <legend class="form-label">金額（港幣）</legend>
+              <div class="donate-amount-options" role="group" aria-label="預設金額">
+                <button class="donate-amount-btn is-selected" type="button" data-amount="300">$300</button>
+                <button class="donate-amount-btn" type="button" data-amount="500">$500</button>
+                <button class="donate-amount-btn" type="button" data-amount="800">$800</button>
+              </div>
+              <div class="donate-amount-custom input-group mt-3">
+                <span class="input-group-text">$</span>
+                <input class="form-control" type="number" name="amount" id="donate-amount" min="1" step="1" value="300" required inputmode="numeric" data-donate-amount-input aria-label="自訂捐款金額" />
+              </div>
+            </fieldset>
+
+            <fieldset class="page-form-fieldset">
+              <legend class="form-label">捐款方式</legend>
+              <div class="d-flex flex-wrap gap-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="frequency" id="freq-monthly" value="monthly" data-donate-freq />
+                  <label class="form-check-label" for="freq-monthly">月捐</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="frequency" id="freq-once" value="once" checked data-donate-freq />
+                  <label class="form-check-label" for="freq-once">一次性</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="row g-3">
+              <div class="col-md-8">
+                <label class="form-label" for="donor-name">捐款人姓名 <span class="text-danger">*</span></label>
+                <input class="form-control" id="donor-name" type="text" name="donor_name" required autocomplete="name" />
+              </div>
+              <div class="col-md-4">
+                <span class="form-label d-block">稱謂</span>
+                <div class="d-flex flex-wrap gap-2 mt-1">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="title" id="title-mr" value="mr" />
+                    <label class="form-check-label" for="title-mr">先生</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="title" id="title-miss" value="miss" />
+                    <label class="form-check-label" for="title-miss">小姐</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="title" id="title-ms" value="ms" />
+                    <label class="form-check-label" for="title-ms">女士</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="title" id="title-mrs" value="mrs" />
+                    <label class="form-check-label" for="title-mrs">太太</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="receipt-name">收據抬頭</label>
+                <input class="form-control" id="receipt-name" type="text" name="receipt_name" />
+                <div class="form-text">收據抬頭若與捐款人姓名不同，請填寫。（可憑捐款收據申請稅項寬減）</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="donor-phone">電話</label>
+                <input class="form-control" id="donor-phone" type="tel" name="phone" autocomplete="tel" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="donor-email">捐款人電郵</label>
+                <input class="form-control" id="donor-email" type="email" name="email" autocomplete="email" />
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" for="donor-postcode">郵政編號（香港除外）</label>
+                <input class="form-control" id="donor-postcode" type="text" name="postcode" autocomplete="postal-code" />
+              </div>
+              <div class="col-md-8">
+                <label class="form-label" for="donor-country">國家／地區</label>
+                <select class="form-select" id="donor-country" name="country">
+                  <option value="">請選擇</option>
+                  <option value="HK" selected>中國香港特別行政區</option>
+                  <option value="CN">中國</option>
+                  <option value="MO">澳門</option>
+                  <option value="TW">台灣</option>
+                  <option value="US">美國</option>
+                  <option value="CA">加拿大</option>
+                  <option value="AU">澳洲</option>
+                  <option value="GB">英國</option>
+                  <option value="OTHER">其他</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="donor-address">捐款人地址（如沒電郵必須填寫）</label>
+                <textarea class="form-control" id="donor-address" name="address" rows="2" autocomplete="street-address"></textarea>
+              </div>
+            </div>
+
+            <div class="form-check mt-3">
+              <input class="form-check-input" type="checkbox" id="auto-transfer" name="auto_transfer" />
+              <label class="form-check-label" for="auto-transfer">自動轉帳</label>
+            </div>
+            <div class="form-check mt-2">
+              <input class="form-check-input" type="checkbox" id="no-news" name="no_news" />
+              <label class="form-check-label" for="no-news">如閣下不希望收到本會資訊，請於此格內加上</label>
+            </div>
+
+            <p class="donate-privacy-note">關於收集捐款者的個人資料，請參閱希望同行之<a href="#">私隱政策及收集個人資料聲明</a>。</p>
+            <p class="donate-tax-note">本機構是一間香港政府認可的慈善團體，閣下之捐款 HK$100 或以上可按香港特別行政區稅務條例申請免稅。</p>
+
+            <div class="donate-step-actions">
+              <button class="c-btn c-btn--outline" type="button" data-donate-back>往上頁</button>
+              <button class="c-btn c-btn--primary" type="submit">繼續捐款</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+
+    <div class="modal fade" id="donate-detail-modal" tabindex="-1" aria-labelledby="donate-detail-title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <p class="donate-detail-category mb-1" data-detail-category></p>
+              <h2 class="modal-title fs-5" id="donate-detail-title" data-detail-title></h2>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="關閉"></button>
+          </div>
+          <div class="modal-body">
+            <p class="donate-detail-amount" data-detail-amount hidden></p>
+            <p class="donate-detail-body mb-0" data-detail-body></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="c-btn c-btn--outline c-btn--sm" data-bs-dismiss="modal">關閉</button>
+            <button type="button" class="c-btn c-btn--primary c-btn--sm" data-detail-select>選擇此項目</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <nav class="footer-links" aria-label="頁尾導覽">
+          <a href="index.html#about">關於我們</a>
+          <a href="#contact">聯絡我們</a>
+          <a href="#">私隱政策</a>
+          <a href="#">使用條款</a>
+          <a href="donation.html">捐款支持</a>
+        </nav>
+
+        <form class="footer-subscribe" action="#" method="post">
+          <label class="footer-subscribe-label" for="donation-footer-subscribe-email">訂閱希望同行最新資訊</label>
+          <div class="footer-subscribe-row">
+            <input
+              id="donation-footer-subscribe-email"
+              type="email"
+              name="email"
+              placeholder="請輸入電郵地址"
+              autocomplete="email"
+              required
+            />
+            <button class="c-btn c-btn--primary c-btn--sm" type="submit">訂閱</button>
+          </div>
+        </form>
+      </div>
+
+      <p class="footer-meta">
+        香港　｜　電話：0000 0000　｜　
+        <a href="mailto:info@example.org">info@example.org</a>
+      </p>
+      <p class="footer-copy">© <span data-year>2026</span> 希望同行 Hope Collective</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" data-back-to-top aria-label="返回頁頂">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 5.5 5.8 11.7l1.4 1.4L11 9.3V19h2V9.3l3.8 3.8 1.4-1.4z"/></svg>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

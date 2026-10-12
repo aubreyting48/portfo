@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>里程碑 | 希望同行 Hope Collective</title>
+  <meta name="description" content="回顧希望同行自2013年創立以來，在內地及香港推動慈善公益工作的重要里程碑。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header" data-header>
+    <div class="container header-top">
+      <a class="brand" href="index.html">
+        <img src="Materials/Logo.png" alt="Logo" />
+        <span class="brand-text">
+          <strong>希望同行</strong>
+          <small>Hope Collective</small>
+        </span>
+      </a>
+
+      <div class="header-actions">
+        <div class="header-social" aria-label="社交媒體">
+          <a class="social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          </a>
+          <a class="social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <form class="header-search header-search--desktop" role="search" action="#" method="get">
+          <label class="visually-hidden" for="milestone-search-desktop">搜尋</label>
+          <input id="milestone-search-desktop" type="search" name="q" placeholder="搜尋…" autocomplete="off" />
+          <button type="submit" aria-label="提交搜尋">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 5L20.49 19l-5-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+            </svg>
+          </button>
+        </form>
+
+        <button class="util-link util-search" type="button" data-search-toggle aria-expanded="false" aria-controls="header-search-panel" aria-label="開啟搜尋">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 5L20.49 19l-5-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+          </svg>
+        </button>
+
+        <a class="c-btn c-btn--primary c-btn--sm" href="donation.html">捐款支持</a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="primary-nav" aria-label="開啟選單">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="header-search-panel" id="header-search-panel" data-search-panel hidden>
+      <form class="container header-search header-search--mobile" role="search" action="#" method="get">
+        <label class="visually-hidden" for="milestone-search-mobile">搜尋</label>
+        <input id="milestone-search-mobile" type="search" name="q" placeholder="搜尋…" autocomplete="off" data-search-input />
+        <button type="submit" aria-label="提交搜尋">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 5L20.49 19l-5-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <div class="container header-nav-row">
+      <nav class="site-nav" id="primary-nav" data-nav aria-label="主要導覽">
+        <ul class="nav-list">
+          <li class="has-submenu" data-submenu>
+            <button class="nav-parent" type="button" aria-expanded="false" aria-controls="menu-about" data-submenu-toggle>
+              關於我們 <span class="nav-caret" aria-hidden="true"></span>
+            </button>
+            <ul class="submenu" id="menu-about">
+              <li><a href="#">宗旨</a></li>
+              <li><a href="#">架構</a></li>
+              <li><a href="#">主席的話</a></li>
+              <li><a href="#">電子快訊/刊物</a></li>
+              <li><a href="milestone.html" aria-current="page">里程碑</a></li>
+              <li><a href="#">財務簡報</a></li>
+              <li><a href="join.html">成為義工</a></li>
+              <li><a href="#">職位空缺</a></li>
+              <li><a href="#">聯絡我們</a></li>
+            </ul>
+          </li>
+
+          <li class="has-submenu" data-submenu>
+            <button class="nav-parent" type="button" aria-expanded="false" aria-controls="menu-mainland" data-submenu-toggle>
+              內地服務 <span class="nav-caret" aria-hidden="true"></span>
+            </button>
+            <ul class="submenu" id="menu-mainland">
+              <li><a href="#">關於留守及困境兒童</a></li>
+              <li><a href="#">緊急救災及扶貧</a></li>
+              <li class="has-submenu has-submenu--nested" data-submenu>
+                <button class="nav-parent" type="button" aria-expanded="false" aria-controls="menu-mainland-care" data-submenu-toggle>
+                  社會關懷服務 <span class="nav-caret" aria-hidden="true"></span>
+                </button>
+                <ul class="submenu submenu--l3" id="menu-mainland-care">
+                  <li><a href="#">義工能力建設培訓</a></li>
+                  <li><a href="#">捐贈器材及健康檢查</a></li>
+                  <li><a href="#">愛心探訪</a></li>
+                  <li><a href="#">物資捐贈</a></li>
+                  <li><a href="#">關愛留守服務點</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu has-submenu--nested" data-submenu>
+                <button class="nav-parent" type="button" aria-expanded="false" aria-controls="menu-mainland-school" data-submenu-toggle>
+                  校園服務 <span class="nav-caret" aria-hidden="true"></span>
+                </button>
+                <ul class="submenu submenu--l3" id="menu-mainland-school">
+                  <li><a href="#">愛學坊多功能活動室</a></li>
+                  <li><a href="#">助學項目</a></li>
+                  <li><a href="#">學生工作坊</a></li>
+                  <li><a href="#">愛心探訪</a></li>
+                  <li><a href="#">物資捐贈</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="has-submenu" data-submenu>
+            <button class="nav-parent" type="button" aria-expanded="false" aria-controls="menu-hk" data-submenu-toggle>
+              香港服務 <span class="nav-caret" aria-hidden="true"></span>
+            </button>
+            <ul class="submenu" id="menu-hk">
+              <li class="has-submenu has-submenu--nested" data-submenu>
+                <button class="nav-parent" type="button" aria-expanded="false" aria-controls="menu-hk-campus" data-submenu-toggle>
+                  校園生命工程 <span class="nav-caret" aria-hidden="true"></span>
+                </button>
+                <ul class="submenu submenu--l3" id="menu-hk-campus">
+                  <li><a href="#">英才領袖培育獎學金計劃（大學）</a></li>
+                  <li><a href="#">英才培育獎學金計劃（中學）</a></li>
+                  <li><a href="#">生命教育3.0計劃</a></li>
+                  <li><a href="#">校園音樂會</a></li>
+                  <li><a href="#">合作學校</a></li>
+                  <li><a href="#">義工培訓</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu has-submenu--nested" data-submenu>
+                <button class="nav-parent" type="button" aria-expanded="false" aria-controls="menu-hk-care" data-submenu-toggle>
+                  社會關懷服務 <span class="nav-caret" aria-hidden="true"></span>
+                </button>
+                <ul class="submenu submenu--l3" id="menu-hk-care">
+                  <li><a href="#">家長心靈加油站</a></li>
+                  <li><a href="#">支援宏福苑居民</a></li>
+                  <li><a href="#">疫有祝福全人關懷3.0計劃</a></li>
+                  <li><a href="#">抗疫物資捐贈</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="#">籌款活動</a></li>
+          <li><a href="news.html">活動資訊</a></li>
+
+          <li class="has-submenu" data-submenu>
+            <button class="nav-parent" type="button" aria-expanded="false" aria-controls="menu-feedback" data-submenu-toggle>
+              各方迴響 <span class="nav-caret" aria-hidden="true"></span>
+            </button>
+            <ul class="submenu" id="menu-feedback">
+              <li><a href="#">義工心聲</a></li>
+              <li><a href="#">受助學校感言</a></li>
+              <li><a href="#">受助學生感言</a></li>
+              <li><a href="#">受助單位感言</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="page-breadcrumb"><a href="index.html">主頁</a> / 關於我們 / 里程碑</p>
+      <h1>里程碑</h1>
+    </div>
+  </section>
+
+  <main class="page-main" id="main">
+    <div class="container">
+      <div class="page-filters page-filters--single">
+        <label class="page-filter">
+          <span class="visually-hidden">所有年份</span>
+          <select class="form-select" name="year" aria-label="所有年份">
+            <option value="">所有年份</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+          </select>
+        </label>
+      </div>
+
+      <p class="page-intro">希望同行在過去的日子努力不懈，致力在內地及香港推動慈善公益工作，讓愛飛揚，為年青一代和弱勢社群注入正能量，愛與盼望。未來將會秉承希望同行精神 — 「有使命，肯承擔，有藍圖，有團隊」為祖國及香港的社會繼續作出貢獻。</p>
+
+      <div class="milestone-list">
+        <article class="milestone-item" id="year-2013">
+          <h2>2013年</h2>
+          <p>2013年8月，創辦人暨主席創辦人到中國農村參與扶貧工作，初次目睹大批「留守兒童」的境況。她走訪多處貧困偏遠地方，看見年邁祖父母照顧孩子、孩子因缺乏父母之愛而內心封閉、夫婦長期分離導致家庭破碎等令人心酸的故事。主席立志回應國家呼籲關愛農村弱勢社群，於2013年12月創立希望同行，開展中國留守兒童關愛工程。</p>
+          <figure class="milestone-media">
+            <img src="Materials/milestone-01.jpg" alt="農村學童在課室學習" width="800" height="600" loading="lazy" />
+          </figure>
+        </article>
+
+        <article class="milestone-item" id="year-2014">
+          <h2>2014年</h2>
+          <p>希望同行在香港舉辦分享會讓更多人了解留守兒童需要，並到河南、四川、湖北和雲南拜訪及舉辦慈善講座，鼓勵當地留守婦女自發關愛兒童。為他們舉辦「農村義工老師培訓」、編製教材及捐贈電腦等器材。同年7月，第一屆「快樂兒童暑期活動」在河南、湖北和雲南舉行，讓留守兒童在安全環境下學習，享受愛和被愛，度過快樂有意義的暑假。</p>
+          <figure class="milestone-media">
+            <img src="Materials/milestone-03.jpg" alt="義工整理關懷物資" width="800" height="600" loading="lazy" />
+          </figure>
+        </article>
+
+        <article class="milestone-item" id="year-2015">
+          <h2>2015年</h2>
+          <p>組織義工編製為農村孩子度身訂造的教材，主題包括世界視野、品格探討、真理故事、趣味英語、環保意識及益智活動，並編製「快樂兒童暑期活動」學生手冊，初版印刷達五萬本。同年開始「精英義工老師培訓」，服務拓展至湖南和重慶，並在香港拓展社區關愛活動，到北美華人聚居城市分享慈善理念，凝聚華人關心祖國。</p>
+        </article>
+
+        <article class="milestone-item" id="year-2016">
+          <h2>2016年</h2>
+          <p>申請資助參與關愛留守工程的農村單位躍升至2,300間，遍及內地9個省份。12月與國家5A慈善團體合作慈善團體合作，成立「合作夥伴專項」，全面開展及深化扶貧和關愛留守人群服務。繼續在香港和北美分享以愛同行的慈善理念，幫助有需要的弱勢社群。</p>
+        </article>
+
+        <article class="milestone-item" id="year-2017">
+          <h2>2017年</h2>
+          <p>開始進入香港不同學校分享愛和正向價值的理念。內地服務拓展至14個省份，與合作慈善團體全力推動關懷留守家庭，進行探訪、深入了解及關顧需要。服務趨向專業化，除2014年已提供的牙醫義診外，更新增視檢配鏡服務。</p>
+          <div class="milestone-gallery">
+            <button class="milestone-thumb" type="button" data-zoom data-zoom-src="Materials/milestone-07.jpg" data-zoom-alt="香港校園分享正向價值">
+              <img src="Materials/milestone-07.jpg" alt="香港校園分享正向價值" width="320" height="240" loading="lazy" />
+            </button>
+            <button class="milestone-thumb" type="button" data-zoom data-zoom-src="Materials/milestone-08.jpg" data-zoom-alt="探訪留守家庭">
+              <img src="Materials/milestone-08.jpg" alt="探訪留守家庭" width="320" height="240" loading="lazy" />
+            </button>
+            <button class="milestone-thumb" type="button" data-zoom data-zoom-src="Materials/milestone-05.jpg" data-zoom-alt="義工為兒童提供健康檢查">
+              <img src="Materials/milestone-05.jpg" alt="義工為兒童提供健康檢查" width="320" height="240" loading="lazy" />
+            </button>
+          </div>
+        </article>
+
+        <article class="milestone-item" id="year-2018">
+          <h2>2018年</h2>
+          <p>服務拓展至18個省市，資助超過1,000個農村單位設立「關愛留守服務點」，為留守家庭提供更全面、多元化和恆常性的社會關懷服務。於香港不同中學分享生命教育課題和回饋社會理念，幫助孕育未來社會棟樑。</p>
+        </article>
+
+        <article class="milestone-item" id="year-2019">
+          <h2>2019年</h2>
+          <p>得到數十間中學認同，全面開展香港校園生命工程，為學生提供優質生命教育、師友同行及領袖培訓。於內地設立中學及大學助學計劃，幫助留守及困境兒童在學習和生活上的需要，並為農村小學建設「愛學坊」多功能活動室，優化教育質素。</p>
+          <figure class="milestone-media">
+            <img src="Materials/milestone-04.jpg" alt="愛學坊多功能活動室" width="800" height="600" loading="lazy" />
+          </figure>
+        </article>
+
+        <article class="milestone-item" id="year-2020">
+          <h2>2020年</h2>
+          <p>新冠狀病毒肆虐湖北省，希望同行立時啟動緊急醫療援助金，透過合作慈善團體購買醫護專用設備、消毒液及口罩等送贈湖北武漢市重點醫院，全力支持前線醫護人員抗疫。疫情下善用科技網絡，在香港及內地繼續拓展校園服務，並舉辦「香港學界多媒體創作比賽」，讓學生在停課不停學期間善用時間創作。</p>
+        </article>
+
+        <article class="milestone-item" id="year-2021">
+          <h2>2021年</h2>
+          <p>推行首輪「疫有祝福．全人關懷」計劃，幫助香港基層學生家庭200戶及提供免費青年活動。同年舉辦「香港學界創意達人比賽」，以「疫世代．得與失．新常態」為題，讓學生以積極正面心態回應當下及未來，並為參賽學生舉辦兩天創意達人工作坊，由資深媒體專業製作人擔任星級導師，擴闊眼界、提升能力和自信心。</p>
+        </article>
+
+        <article class="milestone-item" id="year-2022">
+          <h2>2022年</h2>
+          <p>第五波疫情下推行「疫有祝福．全人關懷3.0」計劃，幫助香港基層學生家庭1,400多戶及提供連串免費青年及家長身心靈關懷活動，並推出全新網上優質教育平台。合作夥伴專項之「未來工程師助學計劃」獲第六屆「江蘇慈善獎」最具影響力慈善項目；主席獲頒「愛心獎」及「疫境自強 傑出人物獎」。</p>
+          <figure class="milestone-media">
+            <img src="Materials/milestone-02.jpg" alt="香港校園生命教育工作坊" width="800" height="600" loading="lazy" />
+          </figure>
+        </article>
+
+        <article class="milestone-item" id="year-2023">
+          <h2>2023年</h2>
+          <p>捐贈土耳其大地震支援振災人民幣350萬元；繼續資助內地公益機構展開社會關懷服務；職業中學及大學助學項目學校增至22所；在香港舉辦不同活動慶祝希望同行成立10周年；香港校園生命工程除繼續「生命教育3.0計劃」外，更與20間中學合作開展第一屆為期三年的「英才培育獎學金計劃」，培育數百位品格良好的中學生成為社會未來棟樑。</p>
+        </article>
+
+        <article class="milestone-item" id="year-2024">
+          <h2>2024年</h2>
+          <p>主席榮獲香港嶺南大學頒授榮譽院士名銜；於嶺南大學開展多個校園項目，包括「英才領袖培育獎學金計劃」，栽培大學生成為社會未來精英。</p>
+          <figure class="milestone-media">
+            <img src="Materials/milestone-06.jpg" alt="大學獎學金計劃師友交流" width="800" height="600" loading="lazy" />
+          </figure>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <nav class="footer-links" aria-label="頁尾導覽">
+          <a href="index.html#about">關於我們</a>
+          <a href="#contact">聯絡我們</a>
+          <a href="#">私隱政策</a>
+          <a href="#">使用條款</a>
+          <a href="donation.html">捐款支持</a>
+        </nav>
+
+        <form class="footer-subscribe" action="#" method="post">
+          <label class="footer-subscribe-label" for="milestone-footer-subscribe-email">訂閱希望同行最新資訊</label>
+          <div class="footer-subscribe-row">
+            <input
+              id="milestone-footer-subscribe-email"
+              type="email"
+              name="email"
+              placeholder="請輸入電郵地址"
+              autocomplete="email"
+              required
+            />
+            <button class="c-btn c-btn--primary c-btn--sm" type="submit">訂閱</button>
+          </div>
+        </form>
+      </div>
+
+      <p class="footer-meta">
+        香港　｜　電話：0000 0000　｜　
+        <a href="mailto:info@example.org">info@example.org</a>
+      </p>
+      <p class="footer-copy">© <span data-year>2026</span> 希望同行 Hope Collective</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" data-back-to-top aria-label="返回頁頂">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 5.5 5.8 11.7l1.4 1.4L11 9.3V19h2V9.3l3.8 3.8 1.4-1.4z"/></svg>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
