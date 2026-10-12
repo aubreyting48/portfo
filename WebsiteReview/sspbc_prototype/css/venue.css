@@ -1,0 +1,279 @@
+/* Venue booking pages — page-specific only */
+.page-hero {
+  padding: clamp(2.5rem, 6vw, 4rem) 0 clamp(2rem, 4vw, 3rem);
+}
+
+.page-hero-lead {
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  color: var(--ink);
+  margin-bottom: 0.65rem;
+}
+
+.page-hero-note {
+  color: var(--steel);
+  max-width: 42rem;
+  font-size: 0.95rem;
+}
+
+.page-hero-lead a {
+  color: var(--wine);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.venue-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.75rem;
+  align-items: stretch;
+}
+
+.venue-sidebar {
+  min-width: 0;
+  /* Keep column as tall as the article so sticky has room to travel */
+  align-self: stretch;
+}
+
+.venue-toc-sticky {
+  border: 1px solid var(--cloud);
+  border-top: 3px solid var(--wine);
+  background: var(--white);
+  padding: 1rem 0.95rem 1.1rem;
+}
+
+.venue-toc-label {
+  margin: 0 0 0.65rem;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.venue-toc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.venue-toc a {
+  display: block;
+  border-left: 2px solid transparent;
+  color: var(--ink-soft);
+  padding: 0.4rem 0.55rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.venue-toc a:hover,
+.venue-toc a:focus-visible {
+  color: var(--wine);
+  border-left-color: var(--wine);
+  background: #f7f5f6;
+}
+
+.venue-doc {
+  min-width: 0;
+}
+
+@media (min-width: 992px) {
+  .venue-layout {
+    grid-template-columns: 15.5rem minmax(0, 1fr);
+    gap: 2.25rem;
+  }
+
+  .venue-toc-sticky {
+    position: sticky;
+    top: calc(var(--header-h) + 1rem);
+    z-index: 20;
+    max-height: calc(100vh - var(--header-h) - 2rem);
+    overflow-y: auto;
+  }
+}
+
+.venue-doc .intro {
+  color: var(--steel);
+  margin-bottom: 1.75rem;
+}
+
+.venue-block {
+  margin-bottom: 2.25rem;
+  scroll-margin-top: 5.5rem;
+}
+
+.venue-block h2 {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  margin: 0 0 0.75rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 2px solid var(--wine);
+}
+
+.venue-block ol,
+.venue-block ul {
+  padding-left: 1.25rem;
+  margin: 0 0 0.85rem;
+  color: var(--ink-soft);
+}
+
+.venue-block li {
+  margin-bottom: 0.4rem;
+}
+
+.venue-block li ol,
+.venue-block li ul {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.venue-note {
+  font-size: 0.92rem;
+  color: var(--steel);
+  margin: 0.75rem 0;
+}
+
+.fee-table-wrap {
+  overflow-x: auto;
+  margin: 1rem 0 1.25rem;
+  border: 1px solid var(--cloud);
+}
+
+.fee-table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  margin: 0;
+}
+
+.fee-table th,
+.fee-table td {
+  border: 1px solid var(--cloud);
+  padding: 0.55rem 0.65rem;
+  vertical-align: top;
+}
+
+.fee-table thead th {
+  background: var(--wine);
+  color: #fff;
+  font-weight: 700;
+}
+
+.fee-table tbody tr:nth-child(even) {
+  background: #f7f5f6;
+}
+
+.venue-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.venue-form .form-section {
+  border: 1px solid var(--cloud);
+  border-top: 3px solid var(--wine);
+  background: var(--white);
+  padding: 1.35rem 1.25rem 1.5rem;
+  margin-bottom: 1.35rem;
+}
+
+.venue-form .form-section h2 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  margin: 0 0 1rem;
+}
+
+.venue-form .form-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.venue-form .form-control,
+.venue-form .form-select {
+  border: 1px solid var(--line);
+  border-radius: 0 !important;
+  min-height: 2.55rem;
+}
+
+.venue-form .form-control:focus,
+.venue-form .form-select:focus {
+  border-color: var(--wine);
+  box-shadow: none;
+}
+
+.venue-form .form-check-input {
+  border-radius: 0 !important;
+}
+
+.venue-form .form-check-input:checked {
+  background-color: var(--wine);
+  border-color: var(--wine);
+}
+
+.privacy-box {
+  background: var(--paper);
+  border: 1px solid var(--cloud);
+  padding: 1rem 1.1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--steel);
+}
+
+.privacy-box h2 {
+  font-size: 1rem;
+  font-family: var(--font-display);
+  color: var(--ink);
+  margin: 0 0 0.5rem;
+}
+
+.room-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.room-row {
+  display: flex;
+  flex-wrap: balance;
+  grid-template-columns: auto 1fr;
+  gap: 0.65rem 1rem;
+  align-items: start;
+  padding: 0.75rem;
+  border: 1px solid var(--cloud);
+  background: var(--paper);
+}
+
+.room-row .time-fields {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.disclaimer-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+}
+
+.disclaimer-list li {
+  margin-bottom: 0.45rem;
+}
+
+@media (max-width: 767.98px) {
+  .room-row {
+    grid-template-columns: 1fr;
+  }
+
+  .room-row .time-fields {
+    grid-template-columns: 1fr;
+  }
+}
