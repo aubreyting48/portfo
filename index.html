@@ -24,7 +24,6 @@
     gtag('js', new Date());
   </script>
 </head>
-  
 <body>
   <!-- ============================================================
        FIXED BACKGROUND LIGHTING (does not scroll with content)
@@ -261,6 +260,7 @@
                   <span class="badge-pill">System Design</span>
                   <span class="badge-pill">UI/UX Design</span>
                   <span class="badge-pill">Web Development</span>
+                  <span class="badge-pill">WCAG Accessibility</span>
                   <span class="status-badge status-offline">Project Offline / Inactive</span>
                 </div>
                 <button type="button" class="btn btn-details" data-bs-toggle="modal" data-bs-target="#modalGames">View Details</button>
@@ -329,7 +329,28 @@
             </article>
           </div>
 
-          <!-- Project 5: HKAG -->
+          <!-- Project 5: Red Seasons -->
+          <div class="col-md-6 col-lg-4">
+            <article class="project-card h-100">
+              <div class="project-cover banner-on-light has-image">
+                <img src="works/redseasons_logo.png" alt="Red Seasons Aroma Restaurant logo">
+              </div>
+              <div class="project-body">
+                <h3>Red Seasons E-commerce Website &amp; System</h3>
+                <p>An e-commerce platform featuring an integrated custom management system to handle inventory, products, deliveries, and promotional discounts.</p>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge-pill">System &amp; Data Architecture</span>
+                  <span class="badge-pill">SQL / Database</span>
+                  <span class="badge-pill">UI/UX Design</span>
+                  <span class="badge-pill">Order System</span>
+                  <span class="badge-pill">Accessibility</span>
+                </div>
+                <button type="button" class="btn btn-details" data-bs-toggle="modal" data-bs-target="#modalRedSeasons">View Details</button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 6: HKAG -->
           <div class="col-md-6 col-lg-4">
             <article class="project-card h-100">
               <div class="project-cover cover-hkag cover-homepage has-image">
@@ -349,7 +370,7 @@
             </article>
           </div>
 
-          <!-- Project 6: Gig X Match -->
+          <!-- Project 7: Gig X Match -->
           <div class="col-md-6 col-lg-4">
             <article class="project-card h-100">
               <div class="project-cover banner-on-light has-image">
@@ -369,7 +390,7 @@
             </article>
           </div>
 
-          <!-- Project 7: Mobile App Suite & UX Case Studies -->
+          <!-- Project 8: Mobile App Suite & UX Case Studies -->
           <div class="col-md-6 col-lg-4">
             <article class="project-card h-100">
               <div class="project-cover cover-mobile has-image">
@@ -389,7 +410,7 @@
             </article>
           </div>
 
-          <!-- Project 8: DHBC Website (hidden) -->
+          <!-- Project 9: DHBC Website (hidden) -->
           <div class="col-md-6 col-lg-4 d-none" aria-hidden="true">
             <article class="project-card h-100">
               <div class="project-cover cover-dhbc cover-homepage has-image">
@@ -409,7 +430,7 @@
             </article>
           </div>
 
-          <!-- Project 9: AI-Assisted Website Audits & Revamp Prototypes -->
+          <!-- Project 10: AI-Assisted Website Audits & Revamp Prototypes -->
           <div class="col-md-6 col-lg-4">
             <article class="project-card h-100">
               <div class="project-cover cover-audit has-image">
@@ -743,6 +764,55 @@
             <li><strong>UX Optimization Reduces Form Drop-Off:</strong> Converting complex paper forms into multi-step forms with progress indicators significantly improved user completion rates and reduced cognitive load.</li>
             <li><strong>Design Systems Guide Client Content:</strong> Establishing clear content templates and visual hierarchy (icons, callout boxes) helped non-technical stakeholders understand what information to provide and how to structure it effectively.</li>
             <li><strong>Client Collaboration:</strong> Learned how to translate client goals into scalable UI patterns without compromising system performance.</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary-custom" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Red Seasons Aroma Restaurant -->
+  <div class="modal fade" id="modalRedSeasons" tabindex="-1" aria-labelledby="modalRedSeasonsLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content project-modal">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modalRedSeasonsLabel">Red Seasons E-commerce Website &amp; System</h2>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-banner banner-on-light has-image">
+            <img src="works/redseasons_logo.png" alt="Red Seasons Aroma Restaurant logo">
+          </div>
+          <p class="modal-tagline mb-3">Developed an e-commerce website integrated with a custom order management system, enabling centralized control over inventory, product catalogs, deliveries, and promotional coupons.</p>
+
+          <h3><i class="fa-solid fa-circle-info me-2" aria-hidden="true"></i>Project Overview</h3>
+          <p>Built on WordPress for straightforward content management and connected to a custom in-house order management system, this platform allowed visitors and members to place orders with specific delivery preferences while helping operations teams manage inventory, catalogs, delivery schedules, and staff task assignments.</p>
+
+          <h3><i class="fa-solid fa-user-gear me-2" aria-hidden="true"></i>My Role &amp; Job Duties</h3>
+          <p>While a colleague led the initial visual website design, I focused on user flow architecture, checkout data/field alignment, operational workflow design, and front-end/CMS flow adjustments, working closely with developers and stakeholders to translate real business rules into clear user and staff journeys.</p>
+
+          <h3><i class="fa-solid fa-circle-exclamation"></i> Challenge &amp; Solutions</h3>
+          <ul>
+            <li><strong>Balancing CMS Simplicity With Custom Operational Needs:</strong> WordPress was required for easy content updates, but standard e-commerce tools and plug-ins couldn't handle complex fulfillment rules. We paired a streamlined CMS storefront with a tailor-made ordering system shaped around actual day-to-day workflows—including a task distribution view designed so frontline staff could quickly spot their own delivery tasks while managers had a clear high-level overview.</li>
+            <li><strong>Handling Multi-Rule Pricing, Fulfillment & Edge Cases:</strong> Order totals and fulfillment depended on product types, pickup/shipping locations, date- or location-specific fees, coupons, and gift rules before final admin confirmation. I helped map out the module sequence and checkout inputs so users and internal teams could move through selection, calculation, and order confirmation without missing required details or hitting unclear states.</li>
+            <li><strong>Aligning Checkout Fields With System Data:</strong> Because default checkout fields didn't match the order system's data structure, I updated checkout inputs and collaborated with developers on how multi-table data and module inputs were organized so front-end steps stayed clean and reliable.</li>
+          </ul>
+
+          <h3><i class="fa-solid fa-code me-2" aria-hidden="true"></i>Technologies &amp; Skills</h3>
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <span class="badge-pill">Database Schema Design</span>
+            <span class="badge-pill">SQL Querying &amp; Data Import</span>
+            <span class="badge-pill">Dynamic Data Integration</span>
+            <span class="badge-pill">UI/UX Design</span>
+            <span class="badge-pill">Web Accessibility</span>
+          </div>
+
+          <h3><i class="fa-solid fa-lightbulb me-2" aria-hidden="true"></i>Key Takeaways &amp; Learnings</h3>
+          <ul>
+            <li><strong>End-to-End Flow &amp; Fulfillment Context:</strong> A transaction flow doesn't end at checkout—it connects selection, rules/pricing, confirmation, and real-world fulfillment/scheduling, much like a multi-step booking experience.</li>
+            <li><strong>Clear Feedback Across States:</strong> Clear validation messages, loading indicators, status labels, and confirmations keep users and staff oriented throughout multi-step processes and edge cases.</li>
           </ul>
         </div>
         <div class="modal-footer">
